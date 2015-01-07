@@ -98,9 +98,10 @@ public class Interface extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        JPanel jPanel2= new JPanel();
-        jPanel2.setLayout(new BoxLayout(jPanel2, BoxLayout.LINE_AXIS));
-        jPanel2.add(new JButton("Game"));
+        JFrame jFrame1= new JFrame();
+        //jPanel2.setLayout(new BoxLayout(jPanel2, BoxLayout.LINE_AXIS));
+        jFrame1.add(new JButton("Game"));
+        jFrame1.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
