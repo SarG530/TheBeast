@@ -15,7 +15,8 @@ public class Place {
     private Place southExit;
     private Place westExit;
     private LockedExit placeExits;
-    //private inventaire
+    private Inventory placeInventory;
+    private Character placeCharacter;
 
     /**
      * Constructor for objects of class Place
@@ -24,6 +25,7 @@ public class Place {
     {
         description = desc;
         placeExits = new LockedExit ();
+        placeInventory = new Inventory();
     }
 
     /**
@@ -45,6 +47,26 @@ public class Place {
         westExit = west;
     }
 
+    public void setPlaceInventory (Inventory i)
+    {
+        placeInventory = i;
+    }
+    
+    public Inventory getPlaceInventory ()
+    {
+        return placeInventory;
+    }
+        
+    public void setPlaceCharacter (Character c)
+        {
+            placeCharacter = c;
+        }
+    
+    public Character getPlaceCharacter()
+    {
+        return placeCharacter;
+    }
+   
     /**
      * Method to see the state of all the exits of a place
      */
@@ -67,7 +89,7 @@ public class Place {
         if (placeExits.getWestLock()== true)
             System.out.println (" West exit is locked");
     }
-
+ 
     /**
      * Method to see the exit
      */
@@ -99,6 +121,8 @@ public class Place {
     {
         return this.westExit;      
     }
+    
+    
 
     /**
      * 

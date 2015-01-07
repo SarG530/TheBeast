@@ -22,7 +22,7 @@ public class Map {
     }
 
     /**
-     * Method to create a new place in the map
+     * Method to add a new place in the map
      */
     public void addPlace(String n)
     {
@@ -50,6 +50,10 @@ public class Map {
             }
             //System.out.println ("State Lock : " + p.getExitState());
             p.getExitState();
+            p.getPlaceInventory().show();
+            if (p.getPlaceCharacter()!= null){
+            p.getPlaceCharacter().getName();
+            }
         }
     }
 
@@ -72,31 +76,91 @@ public class Map {
         Place shadespath = new Place ("Shades Path");
         //Place north, Place east, Place south, Place west
         Place fearpath = new Place ("Fear Path");
+        
         field.setExits (road, farm, null, null);
-        field.getNorthExit();
+        Character fieldCharacter = new Character("Jo");
+        field.setPlaceCharacter(fieldCharacter);
+        //Character jo = new Character ("Jo");
+        field.getPlaceCharacter().setName("Jo");
         thePlaces.add(field);
+        
         farm.setExits (null, null, null, field);
+        Inventory farmInventory= new Inventory();
+        farm.setPlaceInventory(farmInventory);
+        Item bike = new Item("bike");
+        Item meat = new Item("meat");
+        farm.getPlaceInventory().setInventory(bike, meat);
         thePlaces.add(farm);
+        
         road.setExits (villageCenter, church, farm, field);
         thePlaces.add(road);
+        
         villageCenter.setExits (jackhouse, woodcutteroffice, road, bakery);
         thePlaces.add(villageCenter);
+        
         bakery.setExits (null, villageCenter, null, mill);
+        Inventory bakeryInventory= new Inventory();
+        bakery.setPlaceInventory(bakeryInventory);
+        Item bread = new Item("bread");
+        bakery.getPlaceInventory().setInventory(bread, null);
+        Character bakeryCharacter = new Character("The Baker");
+        bakery.setPlaceCharacter(bakeryCharacter);
+        bakery.getPlaceCharacter().setName("The Baker");
         thePlaces.add(bakery);
+        
         mill.setExits (null, bakery, null, null);
+        Inventory millInventory= new Inventory();
+        mill.setPlaceInventory(millInventory);
+        Item flour = new Item("flour");
+        Item trap = new Item("trap");
+        mill.getPlaceInventory().setInventory(flour, trap);
         thePlaces.add(mill);
+        
         jackhouse.setExits (null, null, villageCenter, null);
+        Inventory jackhouseInventory= new Inventory();
+        jackhouse.setPlaceInventory(jackhouseInventory);
+        Item matches = new Item("matches");
+        jackhouse.getPlaceInventory().setInventory(matches, null);
+        Character jackhouseCharacter = new Character("Jack");
+        jackhouse.setPlaceCharacter(jackhouseCharacter);
+        jackhouse.getPlaceCharacter().setName("Jack");
         thePlaces.add(jackhouse);
+        
         woodcutteroffice.setExits (null, null, null, villageCenter);
+        Inventory woodcutterofficeInventory= new Inventory();
+        woodcutteroffice.setPlaceInventory(woodcutterofficeInventory);
+        Item ax = new Item("ax");
+        Item tyre = new Item("tyre");
+        woodcutteroffice.getPlaceInventory().setInventory(ax, tyre);
+        Character woodcutterofficeCharacter = new Character("The Woodcutter");
+        woodcutteroffice.setPlaceCharacter(woodcutterofficeCharacter);
+        woodcutteroffice.getPlaceCharacter().setName("The Woodcutter");
         thePlaces.add(woodcutteroffice);
+        
         church.setExits (null, cemetery, null, road);
+        Inventory churchInventory= new Inventory();
+        church.setPlaceInventory(churchInventory);
+        Item blood = new Item("blood");
+        Item poison = new Item("poison");
+        church.getPlaceInventory().setInventory(blood, poison);
+        Character churchCharacter = new Character("The Priest");
+        church.setPlaceCharacter(churchCharacter);
+        church.getPlaceCharacter().setName("The Priest");
         thePlaces.add(church);
+        
         cemetery.setExits (null, null, forest, church);
+        Inventory cemeteryInventory= new Inventory();
+        cemetery.setPlaceInventory(cemeteryInventory);
+        Item tracks = new Item("tracks");
+        Item torch = new Item("torch");
+        cemetery.getPlaceInventory().setInventory(tracks, torch);
         thePlaces.add(cemetery);
+        
         forest.setExits (cemetery, fearpath, null, shadespath);
         forest.getAllExitState().setEastLock (true); // East exit (fearpath) is locked
         forest.getAllExitState().setWestLock (true); // West exit (shadespath) is locked
         thePlaces.add(forest);
+        
         shadespath.setExits (null, forest, null, null);
         thePlaces.add(shadespath);
         fearpath.setExits (null, null, null, forest);
