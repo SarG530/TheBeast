@@ -75,6 +75,7 @@ public class Interface extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(420, 10, 81, 23);
 
+        jButton2.setBackground(new java.awt.Color(255, 51, 51));
         jButton2.setText("Help");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +85,6 @@ public class Interface extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(420, 50, 81, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Documents\\NetBeansProjects\\TheBeast\\build\\classes\\Images\\menu.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(-70, 0, 600, 400);
