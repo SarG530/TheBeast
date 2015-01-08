@@ -17,5 +17,11 @@ public class Item {
     
     public String getItemDesc(){
         return description;
-    }       
+    }  
+        /**
+     * 
+     */
+    public String toString (){
+        return description;
+    }
 }

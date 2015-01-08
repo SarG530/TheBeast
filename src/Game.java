@@ -9,14 +9,15 @@
  * @author Sarah
  */
 public class Game {
-private Map m;
+private PlacesMap m;
     
     /**
      * Starts the game
      */
     public static void main(String[] args) {
         Game game = new Game();
-        Map m = new Map();
+        PlacesMap m = new PlacesMap();
         m.createMap();
+        
     }    
 }

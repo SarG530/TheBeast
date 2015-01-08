@@ -9,14 +9,14 @@ import java.util.ArrayList;
  *
  * @author Sarah
  */
-public class Map {
+public class PlacesMap {
 // instance variables - replace the example below with your own
     private ArrayList<Place> thePlaces;
 
     /**
      * Constructor for objects of class Map
      */
-    public Map()
+    public PlacesMap()
     {
         thePlaces = new ArrayList<Place>();
     }
@@ -54,6 +54,7 @@ public class Map {
             if (p.getPlaceCharacter()!= null){
             p.getPlaceCharacter().getName();
             }
+          
         }
     }
 

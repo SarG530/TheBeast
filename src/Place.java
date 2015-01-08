@@ -122,11 +122,7 @@ public class Place {
         return this.westExit;      
     }
     
-    
-
-    /**
-     * 
-     */
+   
     public String toString (){
         return description;
     }
