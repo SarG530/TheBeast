@@ -32,6 +32,7 @@ public class FrameField extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -104,6 +105,14 @@ public class FrameField extends javax.swing.JFrame {
         getContentPane().add(jTextField2);
         jTextField2.setBounds(10, 40, 168, 35);
 
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Desktop\\Images WOZ\\arrownorth.png")); // NOI18N
+        jButton2.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jButton2.setMaximumSize(new java.awt.Dimension(50, 50));
+        jButton2.setMinimumSize(new java.awt.Dimension(50, 50));
+        jButton2.setOpaque(false);
+        getContentPane().add(jButton2);
+        jButton2.setBounds(230, 10, 140, 220);
+
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Desktop\\Images WOZ\\field.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
@@ -170,6 +179,7 @@ public class FrameField extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
