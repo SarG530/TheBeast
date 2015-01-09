@@ -81,9 +81,10 @@ public class FrameField extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(30, 140, 92, 34);
 
+        jTextField1.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextField1.setText("You are in the field.");
-        jTextField1.setBorder(null);
+        jTextField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 0, 1));
         jTextField1.setOpaque(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,11 +92,12 @@ public class FrameField extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(10, 10, 151, 36);
+        jTextField1.setBounds(10, 10, 170, 36);
 
+        jTextField2.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jTextField2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextField2.setText("In this place, you can find :");
-        jTextField2.setBorder(null);
+        jTextField2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 1, 1, 1));
         jTextField2.setOpaque(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,9 +105,8 @@ public class FrameField extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(10, 40, 168, 35);
+        jTextField2.setBounds(10, 40, 170, 35);
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Desktop\\Images WOZ\\arrownorth.png")); // NOI18N
         jButton2.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jButton2.setMaximumSize(new java.awt.Dimension(50, 50));
         jButton2.setMinimumSize(new java.awt.Dimension(50, 50));
@@ -113,7 +114,6 @@ public class FrameField extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(230, 10, 140, 220);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Desktop\\Images WOZ\\field.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, -60, 590, 480);
