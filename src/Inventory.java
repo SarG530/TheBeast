@@ -27,7 +27,14 @@ public class Inventory {
         theItems.add(new Item(i));
     }
     
-    
+    /**
+     * Method to remove an item in the inventory
+     */
+    public void removeItem (Item i)
+    {
+        theItems.remove(i);
+    }
+     
     /**
      * Show all the items
      */
