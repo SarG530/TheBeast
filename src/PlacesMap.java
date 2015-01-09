@@ -79,7 +79,7 @@ public class PlacesMap {
         Place fearpath = new Place ("Fear Path");
         
         field.setExits (road, farm, null, null);
-        Character fieldCharacter = new Character("Jo");
+        Character fieldCharacter = new Character("Jo", "description jo");
         field.setPlaceCharacter(fieldCharacter);
         //Character jo = new Character ("Jo");
         field.getPlaceCharacter().setName("Jo");
@@ -104,7 +104,7 @@ public class PlacesMap {
         bakery.setPlaceInventory(bakeryInventory);
         Item bread = new Item("bread");
         bakery.getPlaceInventory().setInventory(bread, null);
-        Character bakeryCharacter = new Character("The Baker");
+        Character bakeryCharacter = new Character("The Baker", "description baker");
         bakery.setPlaceCharacter(bakeryCharacter);
         bakery.getPlaceCharacter().setName("The Baker");
         thePlaces.add(bakery);
@@ -122,7 +122,7 @@ public class PlacesMap {
         jackhouse.setPlaceInventory(jackhouseInventory);
         Item matches = new Item("matches");
         jackhouse.getPlaceInventory().setInventory(matches, null);
-        Character jackhouseCharacter = new Character("Jack");
+        Character jackhouseCharacter = new Character("Jack","description jack");
         jackhouse.setPlaceCharacter(jackhouseCharacter);
         jackhouse.getPlaceCharacter().setName("Jack");
         thePlaces.add(jackhouse);
@@ -133,7 +133,7 @@ public class PlacesMap {
         Item ax = new Item("ax");
         Item tyre = new Item("tyre");
         woodcutteroffice.getPlaceInventory().setInventory(ax, tyre);
-        Character woodcutterofficeCharacter = new Character("The Woodcutter");
+        Character woodcutterofficeCharacter = new Character("The Woodcutter", "description woodcutter");
         woodcutteroffice.setPlaceCharacter(woodcutterofficeCharacter);
         woodcutteroffice.getPlaceCharacter().setName("The Woodcutter");
         thePlaces.add(woodcutteroffice);
@@ -144,7 +144,7 @@ public class PlacesMap {
         Item blood = new Item("blood");
         Item poison = new Item("poison");
         church.getPlaceInventory().setInventory(blood, poison);
-        Character churchCharacter = new Character("The Priest");
+        Character churchCharacter = new Character("The Priest", "description priest");
         church.setPlaceCharacter(churchCharacter);
         church.getPlaceCharacter().setName("The Priest");
         thePlaces.add(church);
