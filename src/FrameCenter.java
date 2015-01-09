@@ -32,7 +32,7 @@ public class FrameCenter extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -109,9 +109,10 @@ public class FrameCenter extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(30, 140, 92, 34);
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 400, 301);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/village.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 590, 360);
 
         setSize(new java.awt.Dimension(604, 397));
         setLocationRelativeTo(null);
@@ -181,7 +182,7 @@ public class FrameCenter extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
