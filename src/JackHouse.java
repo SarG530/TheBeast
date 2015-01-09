@@ -8,12 +8,12 @@
  *
  * @author Sarah
  */
-public class FrameFarm extends javax.swing.JFrame {
+public class JackHouse extends javax.swing.JFrame {
 
     /**
-     * Creates new form FrameFarm
+     * Creates new form JackHouse
      */
-    public FrameFarm() {
+    public JackHouse() {
         initComponents();
     }
 
@@ -30,7 +30,7 @@ public class FrameFarm extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -83,10 +83,10 @@ public class FrameFarm extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(10, 160, 89, 32);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Farm.jpg"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 590, 360);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jackhouse.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 590, 360);
 
         setSize(new java.awt.Dimension(604, 397));
         setLocationRelativeTo(null);
@@ -125,20 +125,20 @@ public class FrameFarm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrameFarm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JackHouse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrameFarm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JackHouse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrameFarm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JackHouse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrameFarm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JackHouse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameFarm().setVisible(true);
+                new JackHouse().setVisible(true);
             }
         });
     }
@@ -148,6 +148,6 @@ public class FrameFarm extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
