@@ -105,7 +105,6 @@ public class FrameField extends javax.swing.JFrame {
         getContentPane().add(jTextField2);
         jTextField2.setBounds(10, 40, 168, 35);
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Desktop\\Images WOZ\\arrownorth.png")); // NOI18N
         jButton2.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jButton2.setMaximumSize(new java.awt.Dimension(50, 50));
         jButton2.setMinimumSize(new java.awt.Dimension(50, 50));
@@ -113,7 +112,7 @@ public class FrameField extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(230, 10, 140, 220);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarah\\Desktop\\Images WOZ\\field.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/field.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, -60, 590, 480);
