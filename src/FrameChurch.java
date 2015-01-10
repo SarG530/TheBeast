@@ -114,6 +114,14 @@ public class FrameChurch extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        Inventory churchInventory= new Inventory();
+        Item poison = new Item("poison");
+        Item blood = new Item("blood");
+        churchInventory.setInventory(poison, blood);
+        FrameInventory Frame1= new FrameInventory();
+        Frame1.getLabel().setText(poison.getItemDesc() + " " + blood.getItemDesc());
+        Frame1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed

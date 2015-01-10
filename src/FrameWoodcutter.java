@@ -104,6 +104,14 @@ public class FrameWoodcutter extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        Inventory woodcutterInventory= new Inventory();
+        Item ax = new Item("ax");
+        Item tyre = new Item("tyre");
+        woodcutterInventory.setInventory(ax,tyre);
+        FrameInventory Frame1= new FrameInventory();
+        Frame1.getLabel().setText(ax.getItemDesc()+" "+tyre.getItemDesc());
+        Frame1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed

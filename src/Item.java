@@ -10,14 +10,20 @@
  */
 public class Item {
     private String description;
+    private Place location;
     
     public Item (String desc){
         description = desc;
+        location = null;
     }
     
     public String getItemDesc(){
         return description;
     }  
+    
+    public Place getLocation(){
+    return location;
+    }
         /**
      * 
      */

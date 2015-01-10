@@ -9,12 +9,14 @@
  * @author Sarah
  */
 public class FrameMill extends javax.swing.JFrame {
+    private Place mill;
 
     /**
      * Creates new form FrameMill
      */
     public FrameMill() {
         initComponents();
+        Place mill = new Place("mill");
     }
 
     /**
@@ -104,6 +106,13 @@ public class FrameMill extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        Inventory millInventory= new Inventory();
+        Item flour = new Item("flour");
+        millInventory.setInventory(flour,null);
+        FrameInventory Frame1= new FrameInventory();
+        Frame1.getLabel().setText(flour.getItemDesc());//fieldInventory.getInvItem()); 
+        Frame1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed

@@ -47,6 +47,15 @@ public class Inventory {
         }
     }
     
+    public String getInvItem()
+    {
+        for (Item i : theItems)
+            if (i!= null){
+            return i.getItemDesc();
+            }
+        return null;
+    }
+    
     /**
      * Method to create the inventory
      */

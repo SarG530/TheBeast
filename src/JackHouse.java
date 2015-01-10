@@ -112,6 +112,13 @@ public class JackHouse extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        Inventory jackHouseInventory= new Inventory();
+        Item matches = new Item("matches");
+        jackHouseInventory.setInventory(matches,null);
+        FrameInventory Frame1= new FrameInventory();
+        Frame1.getLabel().setText(matches.getItemDesc());
+        Frame1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed

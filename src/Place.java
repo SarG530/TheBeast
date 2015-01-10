@@ -28,6 +28,9 @@ public class Place {
         placeInventory = new Inventory();
     }
 
+    public Inventory getInventory(){
+        return placeInventory;
+    }
     /**
      * Method to have a place description
      */
