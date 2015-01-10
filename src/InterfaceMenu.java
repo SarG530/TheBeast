@@ -13,12 +13,14 @@ import javax.swing.JFrame;
  * @author Sarah
  */
 public class InterfaceMenu extends javax.swing.JFrame {
+    private Inventory joInventory;
 
     /**
      * Creates new form InterfaceMenu
      */
     public InterfaceMenu() {
         initComponents();
+        Inventory joInventory = new Inventory();
     }
 
     /**

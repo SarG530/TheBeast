@@ -66,6 +66,11 @@ public class FrameInventory extends javax.swing.JFrame {
         });
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bike.png"))); // NOI18N
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/meat.png"))); // NOI18N
 
@@ -128,6 +133,10 @@ public class FrameInventory extends javax.swing.JFrame {
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:        
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     public javax.swing.JLabel getLabel(){
         return jLabel1;

@@ -22,9 +22,14 @@ public class Inventory {
     /**
      * Method to add a new item in the inventory
      */
-    public void addItem (String i)
+   /* public void addItem (String i)
     {
         theItems.add(new Item(i));
+    }
+    */
+    public void addItem (Item i)
+    {
+        theItems.add(i);
     }
     
     /**
