@@ -117,6 +117,8 @@ public class JackHouse extends javax.swing.JFrame {
         jackHouseInventory.setInventory(matches,null);
         FrameInventory Frame1= new FrameInventory();
         Frame1.getLabel().setText(matches.getItemDesc());
+        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/matches.png")));
+        Frame1.getButton2().setIcon(null);
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

@@ -120,6 +120,8 @@ public class FrameCemetery extends javax.swing.JFrame {
         cemeteryInventory.setInventory(tracks, torch);
         FrameInventory Frame1= new FrameInventory();
         Frame1.getLabel().setText(tracks.getItemDesc() + " " + torch.getItemDesc());
+        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/tracks.png")));
+        Frame1.getButton2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/torch.png")));
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

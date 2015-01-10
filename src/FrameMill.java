@@ -108,9 +108,12 @@ public class FrameMill extends javax.swing.JFrame {
         // TODO add your handling code here:
         Inventory millInventory= new Inventory();
         Item flour = new Item("flour");
-        millInventory.setInventory(flour,null);
+        Item trap = new Item("trap");
+        millInventory.setInventory(flour,trap);
         FrameInventory Frame1= new FrameInventory();
-        Frame1.getLabel().setText(flour.getItemDesc());//fieldInventory.getInvItem()); 
+        Frame1.getLabel().setText(flour.getItemDesc());
+        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/flour.png")));
+        Frame1.getButton2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/trap.png")));
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

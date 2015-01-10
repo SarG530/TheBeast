@@ -118,7 +118,9 @@ public class FrameBakery extends javax.swing.JFrame {
         Item bread = new Item("bread");
         bakeryInventory.setInventory(bread, null);
         FrameInventory Frame1= new FrameInventory();
-        Frame1.getLabel().setText(bread.getItemDesc());//fieldInventory.getInvItem()); 
+        Frame1.getLabel().setText(bread.getItemDesc());
+        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/bread.png")));
+        Frame1.getButton2().setIcon(null);
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

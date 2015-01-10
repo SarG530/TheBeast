@@ -110,6 +110,8 @@ public class FrameWoodcutter extends javax.swing.JFrame {
         woodcutterInventory.setInventory(ax,tyre);
         FrameInventory Frame1= new FrameInventory();
         Frame1.getLabel().setText(ax.getItemDesc()+" "+tyre.getItemDesc());
+        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/ax.png")));
+        Frame1.getButton2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/tyre.png")));
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

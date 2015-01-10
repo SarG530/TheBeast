@@ -120,6 +120,8 @@ public class FrameChurch extends javax.swing.JFrame {
         churchInventory.setInventory(poison, blood);
         FrameInventory Frame1= new FrameInventory();
         Frame1.getLabel().setText(poison.getItemDesc() + " " + blood.getItemDesc());
+        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/poison.png")));
+        Frame1.getButton2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/blood.png")));
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

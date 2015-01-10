@@ -141,7 +141,8 @@ public class FrameFarm extends javax.swing.JFrame {
         Item meat = new Item("meat");
         farmInventory.setInventory(bike, meat);
         FrameInventory Frame1= new FrameInventory();
-        Frame1.getLabel().setText(bike.getItemDesc() + " " + meat.getItemDesc());//fieldInventory.getInvItem()); 
+        Frame1.getLabel().setText(bike.getItemDesc() + " " + meat.getItemDesc());
+        
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

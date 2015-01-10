@@ -146,6 +146,8 @@ public class FrameRoad extends javax.swing.JFrame {
         roadInventory.setInventory(null, null);
         FrameInventory Frame1= new FrameInventory();
         Frame1.getLabel().setText("There is no object in this place"); 
+        Frame1.getButton7().setIcon(null);
+        Frame1.getButton2().setIcon(null);
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
