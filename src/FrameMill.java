@@ -120,6 +120,10 @@ public class FrameMill extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        FrameDialog Frame1= new FrameDialog();
+        Frame1.getLabel().setText("There is no character in this place"); 
+        Frame1.setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

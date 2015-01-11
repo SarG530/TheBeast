@@ -9,12 +9,15 @@
  * @author Sarah
  */
 public class FrameBakery extends javax.swing.JFrame {
+    private Character baker;
+    private Inventory bakeryInventory;
 
     /**
      * Creates new form FrameBakery
      */
     public FrameBakery() {
         initComponents();
+        Character baker = new Character("baker","baker");
     }
 
     /**
@@ -117,16 +120,20 @@ public class FrameBakery extends javax.swing.JFrame {
         Inventory bakeryInventory= new Inventory();
         Item bread = new Item("bread");
         bakeryInventory.setInventory(bread, null);
-        FrameInventory Frame1= new FrameInventory();
-        Frame1.getLabel().setText(bread.getItemDesc());
-        Frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/bread.png")));
-        Frame1.getButton2().setIcon(null);
-        Frame1.setVisible(true);
+        FrameInventory frame1= new FrameInventory();
+        frame1.getLabel().setText(bread.getItemDesc());
+        frame1.getButton7().setIcon(new javax.swing.ImageIcon(getClass().getResource("/bread.png")));
+        frame1.getButton2().setIcon(null);
+        frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        //Character baker= new Character("baker","baker");
+        FrameDialog frame1 = new FrameDialog();
+        frame1.getLabel().setText("Baker said ...");
+        frame1.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

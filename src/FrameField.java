@@ -150,6 +150,7 @@ public class FrameField extends javax.swing.JFrame {
         fieldInventory.setInventory(null, null);
         FrameInventory Frame1= new FrameInventory();
         Frame1.getButton7().setIcon(null);
+        Frame1.getButton2().setIcon(null);
         Frame1.getLabel().setText("There is no object in this place"); 
         Frame1.setVisible(true);
         this.dispose();
@@ -157,6 +158,10 @@ public class FrameField extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
+        FrameDialog Frame1= new FrameDialog();
+        Frame1.getLabel().setText("There is no character in this place"); 
+        Frame1.setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
