@@ -9,12 +9,18 @@
  * @author Sarah
  */
 public class FrameFarm extends javax.swing.JFrame {
+    private static Item bike;
+    private static Item meat;
+    private static Place farm;
 
     /**
      * Creates new form FrameFarm
      */
-    public FrameFarm() {
+    public FrameFarm(Place farm, Item bike, Item meat) {
         initComponents();
+        //Player jo = new Player();
+        //HashMapItem hmi = new HashMapItem();
+        
     }
 
     /**
@@ -114,6 +120,15 @@ public class FrameFarm extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Inventory joInventory= new Inventory();
+        Item bike = new Item("bike");
+        Item meat = new Item("meat");
+        joInventory.setInventory(bike, meat);
+        FrameInventory Frame1= new FrameInventory();
+        Frame1.getLabel().setText(bike.getItemDesc() + " " + meat.getItemDesc());
+        
+        Frame1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -145,6 +160,10 @@ public class FrameFarm extends javax.swing.JFrame {
         
         Frame1.setVisible(true);
         this.dispose();
+        Inventory joInventory = new Inventory();
+        joInventory.addItem(bike);
+        joInventory.addItem(meat);
+        joInventory.show();
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -182,7 +201,7 @@ public class FrameFarm extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameFarm().setVisible(true);
+                new FrameFarm(farm, bike ,meat).setVisible(true);
             }
         });
     }

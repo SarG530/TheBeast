@@ -32,5 +32,6 @@ public class Character {
     public void getDescription (){
         System.out.println("Description : " + description);
     }
+    
 }
  

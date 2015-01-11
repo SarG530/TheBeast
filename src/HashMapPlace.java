@@ -42,4 +42,5 @@ public class HashMapPlace {
          System.out.println(me.getValue());
         }
    }
+   
 }

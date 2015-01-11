@@ -21,6 +21,10 @@ public class Item {
         return description;
     }  
     
+    public void setItemDesc(String s){
+        description = s;
+    }
+    
     public Place getLocation(){
     return location;
     }

@@ -13,9 +13,7 @@ public class Player {
     private Place location;
 
 
-public Player (){
-Inventory joInventory = new Inventory();
-Place location = null;
+public Player (Place location, Inventory joInventory){
 }
 
 public void interaction(){

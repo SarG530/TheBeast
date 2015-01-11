@@ -130,7 +130,7 @@ public class FrameField extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        FrameFarm Frame1= new FrameFarm();
+        FrameField Frame1= new FrameField();
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed

@@ -58,7 +58,7 @@ public class FrameIntroduction extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-InterfaceStart Frame1= new InterfaceStart();
+       InterfaceStart Frame1= new InterfaceStart();
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
