@@ -11,8 +11,12 @@
 public class Character {
     private String name;
     private String description;
+    private Inventory CharInventory;
     
     public Character (String name, String description){
+        name = this.name;
+        description = this.description;
+        CharInventory = new Inventory();
     }
     
     public void setName (String n){
