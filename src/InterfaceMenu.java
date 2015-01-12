@@ -14,6 +14,7 @@ import javax.swing.JFrame;
  */
 public class InterfaceMenu extends javax.swing.JFrame {
     private Inventory joInventory;
+    
 
     /**
      * Creates new form InterfaceMenu

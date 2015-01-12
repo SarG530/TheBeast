@@ -16,7 +16,7 @@ public class FrameField extends javax.swing.JFrame {
     /**
      * Creates new form FrameField
      */
-    public FrameField(Inventory joInventory) {
+    public FrameField() {
         initComponents();
         Place field = new Place("field");
 
@@ -127,6 +127,7 @@ public class FrameField extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         FrameRoad Frame1= new FrameRoad();
+        Frame1.setGame(myGame);
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -207,11 +208,15 @@ public class FrameField extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameField(joInventory).setVisible(true);
+                new FrameField().setVisible(true);
             }
         });
     }
-
+    public void setGame (Game game2){
+        myGame= game2;
+    }
+    
+private Game myGame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;

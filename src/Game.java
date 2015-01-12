@@ -15,9 +15,10 @@ private PlacesMap m;
      * Starts the game
      */
     public static void main(String[] args) {
-        Game game = new Game();
+        Game mygame = new Game();
         PlacesMap m = new PlacesMap();
         m.createMap();
+        Inventory joInventory = new Inventory();
         
-    }    
+    }   
 }

@@ -113,6 +113,7 @@ public class InterfaceStart extends javax.swing.JFrame {
         FrameField Frame1= new FrameField(joInventory);
        Frame1.setVisible(true);  
                this.dispose();
+               Game myGame = new Game();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
