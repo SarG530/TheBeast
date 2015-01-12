@@ -79,7 +79,7 @@ public class PlacesMap {
         Place fearpath = new Place ("Fear Path");
         
         field.setExits (road, farm, null, null);
-        Character fieldCharacter = new Character("Jo", "description jo");
+        Character fieldCharacter = new Character("Jo", "Jo (you in the game) is a farmer in Silent Hill. He has 28 years old. He raises sheep (about 40) for  milk, wool and carne. He has got severals field to can to feed his flock all the year. His work closes is composed to a blue overall, a check shirt and boots. Jo is a brave man, he doesn't hesitate to take actions to help the village and villagers.");
         field.setPlaceCharacter(fieldCharacter);
         //Character jo = new Character ("Jo");
         field.getPlaceCharacter().setName("Jo");
@@ -104,7 +104,7 @@ public class PlacesMap {
         bakery.setPlaceInventory(bakeryInventory);
         Item bread = new Item("bread");
         bakery.getPlaceInventory().setInventory(bread, null);
-        Character bakeryCharacter = new Character("The Baker", "description baker");
+        Character bakeryCharacter = new Character("The Baker", "The baker is a important person in the village. Indeed, all inhabitants come everydays into his bakery to buy bread. He profites to discuss with everyone and peoples like it. He is very friendly and hard worker. He has about 35 years old.");
         bakery.setPlaceCharacter(bakeryCharacter);
         bakery.getPlaceCharacter().setName("The Baker");
         thePlaces.add(bakery);
@@ -122,7 +122,7 @@ public class PlacesMap {
         jackhouse.setPlaceInventory(jackhouseInventory);
         Item matches = new Item("matches");
         jackhouse.getPlaceInventory().setInventory(matches, null);
-        Character jackhouseCharacter = new Character("Jack","description jack");
+        Character jackhouseCharacter = new Character("Jack","Jack is the best friend to Jo. He is alos a farmer. Jo met Jack at shcool. He is less brave than Jo and rather timid.");
         jackhouse.setPlaceCharacter(jackhouseCharacter);
         jackhouse.getPlaceCharacter().setName("Jack");
         thePlaces.add(jackhouse);
@@ -133,7 +133,7 @@ public class PlacesMap {
         Item ax = new Item("ax");
         Item tyre = new Item("tyre");
         woodcutteroffice.getPlaceInventory().setInventory(ax, tyre);
-        Character woodcutterofficeCharacter = new Character("The Woodcutter", "description woodcutter");
+        Character woodcutterofficeCharacter = new Character("The Woodcutter", "The woodcutter have about 50 years old. He usually lonely and talkative, but he's not bad. He likes nothing missing to can work and he is an outstanding mechanics (and woocutter of course).");
         woodcutteroffice.setPlaceCharacter(woodcutterofficeCharacter);
         woodcutteroffice.getPlaceCharacter().setName("The Woodcutter");
         thePlaces.add(woodcutteroffice);
@@ -144,7 +144,7 @@ public class PlacesMap {
         Item blood = new Item("blood");
         Item poison = new Item("poison");
         church.getPlaceInventory().setInventory(blood, poison);
-        Character churchCharacter = new Character("The Priest", "description priest");
+        Character churchCharacter = new Character("The Priest", "Father Flood is a man who live only for God and the Church. He has about 60 years old and wears most of time his Priest's clothes. He leave into the church.");
         church.setPlaceCharacter(churchCharacter);
         church.getPlaceCharacter().setName("The Priest");
         thePlaces.add(church);
