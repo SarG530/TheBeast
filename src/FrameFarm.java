@@ -161,7 +161,7 @@ public class FrameFarm extends javax.swing.JFrame {
         Frame1.getLabel().setText(bike.getItemDesc() + " " + meat.getItemDesc());
         
         Frame1.setVisible(true);
-        this.dispose();
+        //this.dispose();
         Inventory joInventory = new Inventory();
         joInventory.addItem(bike);
         joInventory.addItem(meat);
@@ -211,7 +211,11 @@ public class FrameFarm extends javax.swing.JFrame {
             }
         });
     }
-
+public void setGame (Game game2){
+        myGame= game2;
+    }
+    
+private Game myGame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

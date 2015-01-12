@@ -132,9 +132,6 @@ public class FrameInventory extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         FrameField Frame1= new FrameField();
-       Frame1.setVisible(true);  
-               this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -200,6 +197,11 @@ public class FrameInventory extends javax.swing.JFrame {
             }
         });
 }
+    public void setGame(Game game2){
+        myGame= game2;
+    }
+    
+private Game myGame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -209,6 +211,7 @@ public class FrameInventory extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
 }
     
     

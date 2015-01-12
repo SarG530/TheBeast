@@ -11,7 +11,6 @@
 public class FrameField extends javax.swing.JFrame {
     private Place field;
     private Player jo;
-    private static Inventory joInventory;
 
     /**
      * Creates new form FrameField
@@ -127,7 +126,7 @@ public class FrameField extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         FrameRoad Frame1= new FrameRoad();
-        Frame1.setGame(myGame);
+        Frame1.setGame(myGame);        
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -135,6 +134,7 @@ public class FrameField extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         FrameFarm Frame1= new FrameFarm();
+        Frame1.setGame(myGame);
        Frame1.setVisible(true);  
                this.dispose();
                
@@ -142,13 +142,7 @@ public class FrameField extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Item bike = new Item("bike");
-        Item meat = new Item("meat");
-        joInventory.addItem(bike);
-        joInventory.addItem(meat);
-        FrameInventory Frame1= new FrameInventory();
-        Frame1.getLabel().setText(bike.getItemDesc() + " " + meat.getItemDesc());
-        
+        FrameInventory Frame1 = new FrameInventory();
         Frame1.setVisible(true);
         //this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -163,6 +157,7 @@ public class FrameField extends javax.swing.JFrame {
         Inventory fieldInventory= new Inventory();
         fieldInventory.setInventory(null, null);
         FrameInventory Frame1= new FrameInventory();
+        Frame1.setGame(myGame);
         Frame1.getButton7().setIcon(null);
         Frame1.getButton2().setIcon(null);
         Frame1.getLabel().setText("There is no object in this place"); 
@@ -173,6 +168,7 @@ public class FrameField extends javax.swing.JFrame {
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
         FrameDialog Frame1= new FrameDialog();
+        Frame1.setGame(myGame);
         Frame1.getLabel().setText("There is no character in this place"); 
         Frame1.setVisible(true);
         //this.dispose();

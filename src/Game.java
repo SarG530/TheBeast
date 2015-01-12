@@ -10,15 +10,19 @@
  */
 public class Game {
 private PlacesMap m;
+private Inventory joInventory;
     
     /**
      * Starts the game
      */
     public static void main(String[] args) {
-        Game mygame = new Game();
+        Game myGame = new Game();
         PlacesMap m = new PlacesMap();
         m.createMap();
         Inventory joInventory = new Inventory();
         
-    }   
+    }  
+    public Inventory getJoInventory(){
+        return joInventory;
+    }
 }

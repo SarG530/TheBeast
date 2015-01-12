@@ -176,7 +176,11 @@ public class FrameForest extends javax.swing.JFrame {
             }
         });
     }
-
+public void setGame (Game game2){
+        myGame= game2;
+    }
+    
+private Game myGame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
