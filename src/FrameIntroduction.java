@@ -17,6 +17,7 @@ public class FrameIntroduction extends javax.swing.JFrame {
      */
     public FrameIntroduction() {
         initComponents();
+        
     }
 
     /**
@@ -29,6 +30,12 @@ public class FrameIntroduction extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,10 +54,33 @@ public class FrameIntroduction extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(240, 300, 110, 40);
 
+        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)));
+
+        jLabel3.setText("Silent Hill, a little village in the middle of the countryside.");
+        jLabel3.setToolTipText("");
+        jPanel2.add(jLabel3);
+
+        jLabel4.setText("A terrifying animal, a Beast, threatens the livestock and inhabitants of Silent Hill since few time. ");
+        jPanel2.add(jLabel4);
+
+        jLabel2.setText("The Beast has already killed some sheeps and two villagers. Everyone is terrified by the strange animal. ");
+        jPanel2.add(jLabel2);
+
+        jLabel5.setText("Jo, a farmer exasperated by the umpteenth meals take by the Beast into in his flock, decided to purshasse and");
+        jLabel5.setAlignmentX(0.5F);
+        jLabel5.setAutoscrolls(true);
+        jPanel2.add(jLabel5);
+
+        jLabel6.setText("kills the troublemaker...");
+        jPanel2.add(jLabel6);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(30, 90, 540, 110);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-30, 0, 620, 400);
+        jLabel1.setBounds(-10, -10, 620, 400);
 
         setSize(new java.awt.Dimension(604, 397));
         setLocationRelativeTo(null);
@@ -101,5 +131,11 @@ public class FrameIntroduction extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
