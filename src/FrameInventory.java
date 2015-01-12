@@ -132,7 +132,7 @@ public class FrameInventory extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         FrameField Frame1= new FrameField(joInventory);
+         FrameField Frame1= new FrameField();
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -196,7 +196,7 @@ public class FrameInventory extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameField(joInventory).setVisible(true);
+                new FrameField().setVisible(true);
             }
         });
 }
