@@ -9,6 +9,7 @@
  * @author Sarah
  */
 public class InterfaceStart extends javax.swing.JFrame {
+    private static Inventory joInventory;
 
     /**
      * Creates new form InterfaceStart
@@ -109,7 +110,7 @@ public class InterfaceStart extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        FrameField Frame1= new FrameField();
+        FrameField Frame1= new FrameField(joInventory);
        Frame1.setVisible(true);  
                this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed

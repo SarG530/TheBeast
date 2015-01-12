@@ -13,7 +13,7 @@ public class Player {
     private Place location;
 
 
-public Player (Place location, Inventory joInventory){
+public Player (/*Place location*/ Inventory joInventory){
 }
 
 public void interaction(){

@@ -10,13 +10,16 @@
  */
 public class FrameField extends javax.swing.JFrame {
     private Place field;
+    private Player jo;
+    private static Inventory joInventory;
 
     /**
      * Creates new form FrameField
      */
-    public FrameField() {
+    public FrameField(Inventory joInventory) {
         initComponents();
         Place field = new Place("field");
+
     }
     
     
@@ -130,13 +133,23 @@ public class FrameField extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        FrameField Frame1= new FrameField();
+        FrameFarm Frame1= new FrameFarm();
        Frame1.setVisible(true);  
                this.dispose();
+               
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Item bike = new Item("bike");
+        Item meat = new Item("meat");
+        joInventory.addItem(bike);
+        joInventory.addItem(meat);
+        FrameInventory Frame1= new FrameInventory();
+        Frame1.getLabel().setText(bike.getItemDesc() + " " + meat.getItemDesc());
+        
+        Frame1.setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -194,7 +207,7 @@ public class FrameField extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameField().setVisible(true);
+                new FrameField(joInventory).setVisible(true);
             }
         });
     }

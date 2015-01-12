@@ -8,7 +8,10 @@
  *
  * @author Sarah
  */
-public class FrameForest extends FrameField {
+public class FrameForest extends javax.swing.JFrame {
+    private Place forest;
+    private Player jo;
+    private static Inventory joInventory;
 
     /**
      * Creates new form FrameForest

@@ -12,11 +12,13 @@ public class FrameFarm extends javax.swing.JFrame {
     private static Item bike;
     private static Item meat;
     private static Place farm;
+    private Player jo;
+    private static Inventory joInventory;
 
     /**
      * Creates new form FrameFarm
      */
-    public FrameFarm(Place farm, Item bike, Item meat) {
+    public FrameFarm(/*Place farm, Item bike, Item meat*/) {
         initComponents();
         //Player jo = new Player();
         //HashMapItem hmi = new HashMapItem();
@@ -144,7 +146,7 @@ public class FrameFarm extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        FrameField Frame1= new FrameField();
+        FrameField Frame1= new FrameField(joInventory);
         Frame1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -205,7 +207,7 @@ public class FrameFarm extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameFarm(farm, bike ,meat).setVisible(true);
+                new FrameFarm(/*farm, bike ,meat*/).setVisible(true);
             }
         });
     }
