@@ -128,6 +128,11 @@ public class FrameChurch extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        FrameDialog Frame1= new FrameDialog();
+        Frame1.setGame(myGame);
+        Frame1.getLabel().setText("The Priest is here. He speaks with you:");
+        Frame1.getText().setText("Hello my son, can I help you ? Yes, I have informations about the animal, or rater the Beast. Oh Lord.... Last night, I had a vision during my sleep. I seen a shadow which attack sheeps and terrifies villagers. I seen this shadow turn around the church... I seen a shape, like a very big wolf or bear. And... this animal ki, killed a man, with horror. and at this time, bloodstains formed a number. 6,6,6, the, the number, of, the BEAST... Lord. Satan is here. After, the Beast is going to the forest, probably to hide before his next murder. I'm afraid for you, my son. I'm afraid for everybody here. The evil is here, destroy it my son. I bless you. Mya God be with you.");
+        Frame1.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

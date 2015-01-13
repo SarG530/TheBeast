@@ -11,6 +11,7 @@
 public class FrameBakery extends javax.swing.JFrame {
     private Character baker;
     private Inventory bakeryInventory;
+    private static Inventory joInventory;
 
     /**
      * Creates new form FrameBakery
@@ -133,6 +134,13 @@ public class FrameBakery extends javax.swing.JFrame {
         //Character baker= new Character("baker","baker");
         FrameDialog frame1 = new FrameDialog();
         frame1.getLabel().setText("Baker said ...");
+        if (joInventory.searchItem("flour")){
+            frame1.getText().setText("Oh, fantastic, you have the flour. Thanks guy, I make bread for me now... You can take your bread. Bye Jo !");
+        }
+        else {
+            frame1.getText().setText("Hello Jo ! How are you ? Oh, sorry for your flock. You are need to Bread I suppose. Sorry but I have a problem. I haven't flour to make breads, and I must rest it to monitor the store... You, you want really go to search flour in the mill for me ? Thank you guy.");
+        }
+        
         frame1.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 

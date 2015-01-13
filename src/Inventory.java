@@ -39,6 +39,20 @@ public class Inventory {
     {
         theItems.remove(i);
     }
+    
+    /**
+     * Method to search an item n Inventory and return if it find or not 
+     */
+    public boolean searchItem (String NomItem)
+    {
+        boolean res = false;
+        for (Item i : theItems){
+            if (i.getItemDesc() == NomItem){
+                res = true;
+            }
+        }
+        return res;
+    }
      
     /**
      * Show all the items
